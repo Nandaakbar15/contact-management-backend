@@ -90,7 +90,7 @@ func UpdateContact(c *gin.Context) {
 	if err := c.ShouldBindJSON(&input); err != nil {
 		c.AbortWithStatusJSON(400, gin.H{
 			"statusCode": 400,
-			"message":    "Format data tidak valid!",
+			"message":    "Format JSON tidak valid!",
 		})
 		return
 	}
